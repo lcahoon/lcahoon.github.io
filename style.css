@@ -1,0 +1,294 @@
+body {
+  color: #2b2b2b;
+  margin-left: 10%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #cecece;
+  transition: ease-in 0.5s;
+  
+}
+
+.bgturnred {
+  background-color: #ff4626;
+}
+
+.bgturnpurple {
+  background-color: #8e35e8;
+}
+
+.bgturnblue {
+  background-color: #60AFFF;
+}
+
+.material-icons {
+  color: #fff;
+}
+
+#heading {
+  width: 20%;
+  transition: all ease-out 1.2s;
+  
+}
+
+#title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 64px;
+  text-align: left;
+}
+
+.titlecontainer {
+  transform: scale(2.6,2.6) translate(80px,30px);
+  transition: ease-out 0.4s;
+}
+
+.size {
+  transform: scale(1,1);
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  width: 70%;
+  padding: 5px;
+  box-shadow: 0px 0px 200px #1b212b;
+  display: none;
+}
+
+.cardcontainer {
+  opacity: 0;
+  transform: translate(0px,40px);
+  transition: ease-out 0.6s;
+}
+
+.fade {
+  opacity: 1;
+  transform: translate(0px,0px);
+}
+
+.slide {
+  display: block;
+}
+
+.cardtitle {
+  font-family: 'Khand', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 35px;
+  display: inline-block;
+  display: block;
+  
+}
+
+.cardtext {
+  line-height: 25px;
+  margin-left: 15px;
+}
+
+#userimg {
+  background-image: url("file:///C:/Users/cahoo/Downloads/skype_profile_pic%20(2).png");
+  background-size: 100%;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  margin: 20px;
+  display: inline-block;
+}
+
+.artcontainer {
+  background: url("http://www.freebiesgallery.com/wp-content/uploads/2014/02/blurred-background-2.jpg");
+  background-size: 170%;
+  height: 120px;
+  width: 190px;
+  margin: 8px;
+  display: inline-block;
+}
+
+.nav {
+  height: 300px;
+  width: 10px;
+  position: fixed;
+  top: 35px;
+  left: 25px;
+  
+}
+
+button, .navbutton {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #60afff;
+  border: none;
+  transition: ease-out 0.2s;
+  
+}
+
+.bbgturngreen {
+  background-color: #00f783;
+}
+
+.turngreen .navbuttonactivebg {
+  background-color: rgba(255, 70, 38, 255);
+}
+
+.bbgturnorange {
+  background-color: #ffc526;
+}
+
+.turnorange .navbuttonactivebg {
+  background-color: rgba(142, 53, 232, 255);
+}
+
+.navcontainer {
+  margin-top: 50px;
+  display: none;
+  height: 100%;
+  width: 100px;
+  
+}
+
+.show {
+  display: block;
+  transform: scale(1,1);
+}
+
+.buttonactivebg {
+  background-color: #60afff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: auto;
+  transform: scale(1,1);
+  transition: ease-out 0.2s;
+}
+
+.navbuttonactivebg {
+  rgba(255, 255, 255, 0);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: auto;
+  transform: scale(1,1);
+  transition: ease-out 0.2s;
+}
+
+.change .navbuttonactivebg {
+  transform: scale(1.6,1.6);
+  box-shadow: 0px 0px 15px #5b5b5b;
+}
+
+.change .buttonactivebg {
+  transform: scale(1.6,1.6);
+  box-shadow: 0px 0px 15px #5b5b5b;
+  background-color: #fff;
+}
+
+.navbutton:hover {
+  transform: scale(1.3,1.3);
+  
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 40px;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 7px) ;
+    transform: rotate(-45deg) translate(-8px, 7px) ;
+    background-color: #ff9bb1;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    transform: scale(0,1);
+    opacity: 0;
+    
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+    background-color: #ff9bb1;
+}
+
+.linkbutton {
+  margin-bottom: 15px;
+}
+
+#abouticon {
+  color: #fff;
+  font-size: 40px;
+}
+
+/*.change #abouticon {
+  color: #60afff
+}*/
+
+#workicon {
+  color: #fff;
+  font-size: 40px;
+}
+
+/*.change #workicon {
+  color: #60afff
+}*/
+
+#contacticon {
+  color: #fff;
+  font-size: 35px;
+}
+
+/*.change #contacticon {
+  color: #60afff
+}*/
+
+.turnRed {
+  background-color: #ff9bb1;
+}
+
+.xico {
+  color: #fff;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 18px; /* Some padding */
+    border-radius: 4px; /* Rounded borders */
+    border: none;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 8px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    background-color: #dbdbdb;
+    
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #60afff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submitbutton {
+  font-size: 40px;
+}
+
+/* Add a background color and some padding around the form */
+.ccontainer {
+    margin: 0px;
+    padding: 20px;
+}

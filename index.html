@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Khand" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Lucas Cahoon</title>
+  </head>
+  
+  <body id="body">
+  
+  <div id="heading">
+    <div class="titlecontainer" id="titlecontainer">
+    <h1 id="title" class="title">Lucas Cahoon</h1>
+    </div>
+    
+  </div>
+  
+  <div class="cardcontainer" id="aboutcc">
+  <div id="about" class="card">
+    <div id="userimg"></div>
+    <h1 class="cardtitle">About</h1>
+    <p class="cardtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  </div>
+  
+  <div class="cardcontainer" id="workcc">
+  <div id="work" class="card">
+    <h1 class="cardtitle">Work</h1>
+    
+    <div class="artcontainer">
+    <i class="xico material-icons">photo
+</i>
+    </div>
+    <div class="artcontainer">
+      <i class="xico material-icons">photo
+</i>
+    </div>
+    <div class="artcontainer">
+      <i class="xico material-icons">photo
+</i>
+    </div>
+    <div class="artcontainer">
+      <i class="xico material-icons">photo
+</i>
+    </div>
+    <div class="artcontainer">
+      <i class="xico material-icons">photo
+</i>
+    </div>
+    <div class="artcontainer">
+      <i class="xico material-icons">photo
+</i>
+    </div>
+    <div class="artcontainer">
+      <i class="xico material-icons">photo
+</i>
+    </div>
+    <div class="artcontainer">
+      <i class="xico material-icons">photo
+</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="cardcontainer" id="contactcc">
+  <div id="contact" class="card">
+    <h1 class="cardtitle">Contact</h1>
+    <div class="ccontainer">
+  <form action="/action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" style="height:200px"></textarea>
+    
+    <button class="navbutton" type="submit" value="Submit">
+    <i id="submitbutton" class="material-icons">done</i>
+    </button>
+
+  </form>
+</div>
+  </div>
+  </div>
+  
+  <div class="nav">
+  
+  <button id="navOpen" class="navbutton" onclick="buttonAnim(this);turnRed(this);dropDown(this);dropDownClose(this);">
+  
+  <div class="buttonactivebg">
+      <div class="container">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+      </div>
+  </div>
+    </button>
+      
+  <div id="navLinks" class="navcontainer">
+  
+  <button id="aboutlink" class="navbutton linkbutton" onclick="onlyone(this);onlycone(this);shrinkTitle();bgturnred();buttonturngreen(this);">
+    <a href="#about">
+    <div class="navbuttonactivebg">
+      <i id="abouticon" class="material-icons">info</i>
+    </div>
+    </a>
+  </button>
+  
+  <button id="worklink" class="navbutton linkbutton" onclick="onlytwo(this);onlyctwo(this);shrinkTitle();bgturnpurple();buttonturnorange(this);">
+    <a href="#work">
+    <div class="navbuttonactivebg">
+      <i id="workicon" class="material-icons">color_lens</i>
+    </div>
+    </a>
+  </button>
+  
+  <button id="contactlink" class="navbutton linkbutton" onclick="onlythree(this);onlycthree(this);shrinkTitle();bgturnblue();buttonturnpink(this);">
+    <a href="#contact">
+    <div class="navbuttonactivebg">
+      <i id="contacticon" class="material-icons">mail</i>
+    </div>
+    </a>
+  </button>
+  
+  </div>
+  
+  </div>
+  
+  
+  
+  <script>
+
+function buttonAnim(x) {
+
+
+    x.classList.toggle("change");
+
+}
+
+function turnRed() {
+    document.getElementById("navOpen").classList.toggle("turnRed");
+}
+
+function dropDown() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+
+function dropDownClose() {
+   document.getElementById("aboutlink").classList.remove("change");
+   document.getElementById("worklink").classList.remove("change");
+   document.getElementById("contactlink").classList.remove("change");
+   
+}
+
+  function onlyone(x){
+   document.getElementById("contactlink").classList.remove("change");
+   document.getElementById("worklink").classList.remove("change");
+   x.classList.toggle("change");
+
+}
+  function onlytwo(x){
+   document.getElementById("aboutlink").classList.remove("change");
+   document.getElementById("contactlink").classList.remove("change");
+   x.classList.toggle("change");
+
+}
+  function onlythree(x){
+   document.getElementById("worklink").classList.remove("change");
+   document.getElementById("aboutlink").classList.remove("change");
+   x.classList.toggle("change");
+
+}
+
+  function onlycone(){
+   document.getElementById("about").classList.add("slide");
+   document.getElementById("work").classList.remove("slide");
+   document.getElementById("contact").classList.remove("slide");
+   document.getElementById("aboutcc").classList.add("fade");
+   document.getElementById("workcc").classList.remove("fade");
+   document.getElementById("contactcc").classList.remove("fade");
+}
+  
+  function onlyctwo(){
+   document.getElementById("about").classList.remove("slide");
+   document.getElementById("work").classList.add("slide");
+   document.getElementById("contact").classList.remove("slide");
+   document.getElementById("aboutcc").classList.remove("fade");
+   document.getElementById("workcc").classList.add("fade");
+   document.getElementById("contactcc").classList.remove("fade");
+}
+
+  function onlycthree(){
+   document.getElementById("about").classList.remove("slide");
+   document.getElementById("work").classList.remove("slide");
+   document.getElementById("contact").classList.add("slide");
+   document.getElementById("aboutcc").classList.remove("fade");
+   document.getElementById("workcc").classList.remove("fade");
+   document.getElementById("contactcc").classList.add("fade");
+  }
+  
+  function shrinkTitle(){
+   document.getElementById("titlecontainer").classList.add("size");
+}
+
+  function bgturnred(){
+   document.getElementById("body").classList.add("bgturnred");
+   document.getElementById("body").classList.remove("bgturnpurple");
+   document.getElementById("body").classList.remove("bgturnblue");
+}
+
+  function bgturnpurple(){
+   document.getElementById("body").classList.add("bgturnpurple");
+   document.getElementById("body").classList.remove("bgturnred");
+   document.getElementById("body").classList.remove("bgturnblue");
+}
+
+  function bgturnblue(){
+   document.getElementById("body").classList.add("bgturnblue");
+   document.getElementById("body").classList.remove("bgturnred");
+   document.getElementById("body").classList.remove("bgturnpurple");
+}
+
+  function buttonturngreen(bg){
+   document.getElementById("aboutlink").classList.add("bbgturngreen");
+   document.getElementById("worklink").classList.add("bbgturngreen");
+   document.getElementById("contactlink").classList.add("bbgturngreen");
+   document.getElementById("aboutlink").classList.remove("bbgturnorange");
+   document.getElementById("worklink").classList.remove("bbgturnorange");
+   document.getElementById("contactlink").classList.remove("bbgturnorange");
+   bg.classList.toggle("turngreen");
+}
+
+  function buttonturnorange(bg){
+   document.getElementById("aboutlink").classList.add("bbgturnorange");
+   document.getElementById("worklink").classList.add("bbgturnorange");
+   document.getElementById("contactlink").classList.add("bbgturnorange");
+   document.getElementById("aboutlink").classList.remove("bbgturngreen");
+   document.getElementById("worklink").classList.remove("bbgturngreen");
+   document.getElementById("contactlink").classList.remove("bbgturngreen");
+   bg.classList.toggle("turnorange");
+}
+
+
+</script>
+
+  </body>
+</html>
